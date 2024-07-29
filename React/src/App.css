@@ -10,11 +10,21 @@ body {
   padding: 20px;
 }
 
-.app > .row {
+.main-title {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #ffc107;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.row {
   margin-bottom: 40px;
 }
 
-.app > .row > h2 {
+.row h2 {
   font-family: 'Bebas Neue', cursive;
   margin-bottom: 20px;
 }
@@ -25,17 +35,6 @@ body {
   padding-bottom: 20px;
 }
 
-/* Add this at the top of your existing CSS */
-.main-title {
-  font-family: 'Bebas Neue', cursive;
-  font-size: 3rem;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  color: #ffc107; /* This is the same color as the star ratings */
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
-
 .movie {
   display: flex;
   flex-direction: column;
@@ -44,25 +43,93 @@ body {
   width: 200px;
 }
 
-.movie > .title {
+.movie .title {
   font-family: 'Bebas Neue', cursive;
   width: 100%;
   margin-top: 0px;
   margin-bottom: 10px;
-  font-size: 16px; /* Set a default font size */
-  letter-spacing: 0.5px;
-  white-space: nowrap;
+  height: 1.5em; /* Adjust this value if you need more or less height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
-  text-overflow: ellipsis;
-  text-align: left;
-  min-height: 1.2em; /* Ensure consistent height */
 }
 
-.movie > img {
+.movie .title-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  width: 100%;
+  text-align: center;
+}
+
+.movie .image-container {
+  position: relative;
   width: 200px;
   height: 300px;
+}
+
+.movie img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
+  transition: opacity 0.3s;
+}
+
+.movie .tooltip {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.movie .tooltip-content {
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9em;
+  max-height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie .tooltip-content p {
+  margin-bottom: 10px;
+}
+
+.movie .read-more-btn {
+  background-color: #f5c518;
+  color: #000000;
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.movie .read-more-btn:hover {
+  background-color: #e3b709;
+}
+
+.movie .image-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.movie .image-container:hover img {
+  opacity: 0.3;
 }
 
 .movie .ratings {
@@ -74,7 +141,6 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 5px;
-  font-family: 'Roboto', sans-serif;
   font-size: 0.9em;
   width: 100%;
 }
@@ -93,4 +159,23 @@ body {
 
 .movie .rating .stars svg {
   flex-shrink: 0;
+  margin-right: 2px;
+}
+
+/* Scrollbar styling */
+.movie-list::-webkit-scrollbar {
+  height: 8px;
+}
+
+.movie-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.movie-list::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.movie-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

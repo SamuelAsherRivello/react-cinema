@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaStar, FaRegStar, FaStarHalfAlt } from 'react-icons/fa';
 import { Movie } from '../types';
 
@@ -25,6 +25,31 @@ const MovieList: React.FC<MovieListProps> = ({ movies }) => {
     return stars;
   };
 
+  const getImdbUrl = (imdbID: string) => {
+    return `https://www.imdb.com/title/${imdbID}/`;
+  };
+
+  const adjustFontSize = (element: HTMLElement) => {
+    const maxSize = 1.2; // Starting font size in em
+    const minSize = 0.5; // Minimum font size in em
+    let size = maxSize;
+
+    element.style.fontSize = `${maxSize}em`;
+    while (element.scrollWidth > element.offsetWidth && size > minSize) {
+      size -= 0.1;
+      element.style.fontSize = `${size}em`;
+    }
+  };
+
+  useEffect(() => {
+    const titles = document.querySelectorAll('.title-text');
+    titles.forEach(title => {
+      if (title instanceof HTMLElement) {
+        adjustFontSize(title);
+      }
+    });
+  }, [movies]);
+
   return (
     <div className="movie-list">
       {movies.map((movie, index) => (
@@ -32,7 +57,17 @@ const MovieList: React.FC<MovieListProps> = ({ movies }) => {
           <div className="title">
             <span className="title-text">{`${index + 1}. ${movie.Title} (${movie.Year})`}</span>
           </div>
-          <img src={movie.Poster} alt={movie.Title} />
+          <div className="image-container">
+            <img src={movie.Poster} alt={movie.Title} />
+            <div className="tooltip">
+              <div className="tooltip-content">
+                <p>{movie.meta.description}</p>
+                <a href={getImdbUrl(movie.imdbID)} target="_blank" rel="noopener noreferrer" className="read-more-btn">
+                  Read More on IMDb
+                </a>
+              </div>
+            </div>
+          </div>
           <div className="ratings">
             {movie.meta.ratings.map((rating, rIndex) => {
               const [reviewer, score] = Object.entries(rating)[0];
@@ -40,7 +75,7 @@ const MovieList: React.FC<MovieListProps> = ({ movies }) => {
                 <div key={rIndex} className="rating">
                   <span className="name">{reviewer}</span>
                   <div className="stars">
-                    {renderStars(score ? parseFloat(score) : 0)}
+                    {renderStars(parseFloat(score as string))}
                   </div>
                 </div>
               );

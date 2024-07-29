@@ -14,5 +14,6 @@ export interface Movie {
   Poster: string;
   meta: {
     ratings: Rating[];
+    description: string; // Add this line
   };
 }
