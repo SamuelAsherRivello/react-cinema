@@ -2,10 +2,20 @@ body {
     background-color: rgb(32, 32, 32) !important;
     color: white !important;
   }
+/* Import custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap');
+body {
+  background-color: rgb(32, 32, 32) !important;
+  color: white !important;
+  font-family: 'Roboto', sans-serif; /* Default font for body */
+}
   
   .app {
     /* You can add specific styles for the app container here if needed */
   }
+.app {
+  /* You can add specific styles for the app container here if needed */
+}
   
   .app > .row {
     display: flex;
@@ -13,6 +23,12 @@ body {
     flex-wrap: nowrap;
     padding-bottom: 20px; /* Add some padding to ensure scrollbar doesn't cover content */
   }
+.app > .row {
+  display: flex;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  padding-bottom: 20px; /* Add some padding to ensure scrollbar doesn't cover content */
+}
   
   .movie {
     display: flex;
@@ -20,6 +36,12 @@ body {
     align-items: center;
     margin: 0 10px; /* Add some horizontal spacing between movies */
   }
+.movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px; /* Add some horizontal spacing between movies */
+}
   
   .movie > .title {
   
@@ -29,9 +51,52 @@ body {
     margin-bottom: 10px;
     font-size: 1em;
   }
+.movie > .title {
+  font-family: 'Bebas Neue', cursive; /* Custom font for movie title */
+  text-wrap: nowrap;
+  overflow: hidden;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 1.2em; /* Slightly increased font size */
+  letter-spacing: 0.5px; /* Add a bit of letter spacing for better readability */
+}
   
   .movie > img {
-    max-width: 200px !important;
-    height: auto; /* Maintain aspect ratio */
+    width: 200px;
+    height: 300px; /* Adjust this value to your preferred aspect ratio */
+    object-fit: cover;
+    object-position: center;
   }
+.movie > img {
+  width: 200px;
+  height: 300px; /* Adjust this value to your preferred aspect ratio */
+  object-fit: cover;
+  object-position: center;
+}
   
+  .movie .ratings {
+    margin-top: 10px;
+  }
+.movie .ratings {
+  margin-top: 10px;
+}
+  
+  .movie .rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+.movie .rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  font-family: 'Roboto', sans-serif; /* Custom font for rating text */
+  font-size: 0.9em; /* Slightly smaller font size for ratings */
+}
+  
+  .movie .rating svg {
+    margin-left: 5px;
+  }
+.movie .rating svg {
+  margin-left: 5px;
+}
