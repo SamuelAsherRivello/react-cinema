@@ -4,10 +4,12 @@ body {
   background-color: rgb(32, 32, 32) !important;
   color: white !important;
   font-family: 'Roboto', sans-serif;
+  padding: 0px !important;
+  margin: 0px !important;
 }
 
 .app {
-  padding: 20px;
+  padding: 0px;
 }
 
 .main-title {
@@ -22,6 +24,8 @@ body {
 
 .row {
   margin-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .row h2 {
@@ -48,7 +52,7 @@ body {
   width: 100%;
   margin-top: 0px;
   margin-bottom: 10px;
-  height: 1.5em; /* Adjust this value if you need more or less height */
+  height: 1.5em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,6 +71,22 @@ body {
   position: relative;
   width: 200px;
   height: 300px;
+  cursor: pointer;
+}
+
+.movie .info-icon {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.movie .image-container:hover .info-icon {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .movie img {
@@ -78,7 +98,6 @@ body {
 }
 
 .movie .tooltip {
-  visibility: hidden;
   position: absolute;
   top: 0;
   left: 0;
@@ -89,8 +108,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s;
+  opacity: 1;
+  z-index: 1;
 }
 
 .movie .tooltip-content {
@@ -121,15 +140,6 @@ body {
 
 .movie .read-more-btn:hover {
   background-color: #e3b709;
-}
-
-.movie .image-container:hover .tooltip {
-  visibility: visible;
-  opacity: 1;
-}
-
-.movie .image-container:hover img {
-  opacity: 0.3;
 }
 
 .movie .ratings {
@@ -178,4 +188,32 @@ body {
 
 .movie-list::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.trivia {
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  box-sizing: border-box;
+}
+
+.trivia h2 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffc107;
+}
+
+.trivia ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.trivia li {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  line-height: 1.4;
 }

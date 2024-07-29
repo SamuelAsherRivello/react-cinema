@@ -114,7 +114,7 @@ export const MovieData = [
   {
     "Title": "X",
     "Year": "2022",
-    "imdbID": "tt18925334",
+    "imdbID": "tt13560574",
     "Type": "movie",
     "Poster": "https://i.ebayimg.com/images/g/E3cAAOSw0AVjMGq4/s-l1600.jpg",
     "meta": {

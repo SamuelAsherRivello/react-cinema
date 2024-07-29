@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { FaStar, FaRegStar, FaStarHalfAlt } from 'react-icons/fa';
+import React, { useEffect, useState } from 'react';
+import { FaStar, FaRegStar, FaStarHalfAlt, FaInfoCircle } from 'react-icons/fa';
 import { Movie } from '../types';
 
 interface MovieListProps {
@@ -7,6 +7,8 @@ interface MovieListProps {
 }
 
 const MovieList: React.FC<MovieListProps> = ({ movies }) => {
+  const [openTooltip, setOpenTooltip] = useState<string | null>(null);
+
   const renderStars = (rating: number): JSX.Element[] => {
     const stars: JSX.Element[] = [];
     const fullStars = Math.floor(rating);
@@ -30,8 +32,8 @@ const MovieList: React.FC<MovieListProps> = ({ movies }) => {
   };
 
   const adjustFontSize = (element: HTMLElement) => {
-    const maxSize = 1.2; // Starting font size in em
-    const minSize = 0.5; // Minimum font size in em
+    const maxSize = 1.2;
+    const minSize = 0.5;
     let size = maxSize;
 
     element.style.fontSize = `${maxSize}em`;
@@ -50,6 +52,24 @@ const MovieList: React.FC<MovieListProps> = ({ movies }) => {
     });
   }, [movies]);
 
+  const handleImageClick = (imdbID: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    setOpenTooltip(openTooltip === imdbID ? null : imdbID);
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (openTooltip && !(e.target as Element).closest('.image-container')) {
+        setOpenTooltip(null);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [openTooltip]);
+
   return (
     <div className="movie-list">
       {movies.map((movie, index) => (
@@ -57,16 +77,21 @@ const MovieList: React.FC<MovieListProps> = ({ movies }) => {
           <div className="title">
             <span className="title-text">{`${index + 1}. ${movie.Title} (${movie.Year})`}</span>
           </div>
-          <div className="image-container">
+          <div className="image-container" onClick={(e) => handleImageClick(movie.imdbID, e)}>
             <img src={movie.Poster} alt={movie.Title} />
-            <div className="tooltip">
-              <div className="tooltip-content">
-                <p>{movie.meta.description}</p>
-                <a href={getImdbUrl(movie.imdbID)} target="_blank" rel="noopener noreferrer" className="read-more-btn">
-                  Read More on IMDb
-                </a>
-              </div>
+            <div className="info-icon">
+              <FaInfoCircle />
             </div>
+            {openTooltip === movie.imdbID && (
+              <div className="tooltip">
+                <div className="tooltip-content">
+                  <p>{movie.meta.description}</p>
+                  <a href={getImdbUrl(movie.imdbID)} target="_blank" rel="noopener noreferrer" className="read-more-btn">
+                    Read More on IMDb
+                  </a>
+                </div>
+              </div>
+            )}
           </div>
           <div className="ratings">
             {movie.meta.ratings.map((rating, rIndex) => {

@@ -1,5 +1,3 @@
-// src/types.ts
-
 export interface Rating {
   Asher?: string;
   Julia?: string;
@@ -13,7 +11,7 @@ export interface Movie {
   Type: string;
   Poster: string;
   meta: {
+    description: string;
     ratings: Rating[];
-    description: string; // Add this line
   };
 }
