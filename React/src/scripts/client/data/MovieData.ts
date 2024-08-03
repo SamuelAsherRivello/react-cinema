@@ -1,4 +1,6 @@
-export const MovieData = [
+import { Movie } from "./Movie";
+
+export const MovieData : Movie[] = [
 {
     "Title": "Civil War",
     "Year": "2024",
@@ -8,7 +10,7 @@ export const MovieData = [
     "meta": {
       "description": "A race to the White House in a torn America. Journalists risk their lives to report on a nation's descent into civil war and martial law.",
       "ratings": [
-        {"Asher": "5"},
+        {"Asher": "4.5"},
         {"Julia": "4.5"}
       ]
     }
@@ -206,6 +208,34 @@ export const MovieData = [
       "ratings": [
         {"Asher": "4"},
         {"Julia": "5"}
+      ]
+    }
+  },
+  {
+    "Title": "Barbarian",
+    "Year": "2022",
+    "imdbID": "tt15791034",
+    "Type": "movie",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BN2M3Y2NhMGYtYjUxOS00M2UwLTlmMGUtYzY4MzFlNjZkYzY2XkEyXkFqcGdeQXVyODc0OTEyNDU@._V1_SX300.jpg",
+    "meta": {
+      "description": "A woman staying at an Airbnb discovers that the house she has rented is not what it seems.",
+      "ratings": [
+        {"Asher": "5"},
+        {"Julia": "4.5"}
+      ]
+    }
+  }
+  , {
+    "Title": "Super8",
+    "Year": "2011",
+    "imdbID": "tt1650062",
+    "Type": "movie",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMjIzNjEyMzcwOF5BMl5BanBnXkFtZTcwMTkyMjE0NQ@@._V1_SX300.jpg",
+    "meta": {
+      "description": "",
+      "ratings": [
+        {"Asher": "4.5"},
+        {"Julia": "4"}
       ]
     }
   }

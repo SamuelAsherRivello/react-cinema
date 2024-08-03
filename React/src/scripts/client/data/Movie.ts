@@ -1,8 +1,4 @@
-export interface Rating {
-  Asher?: string;
-  Julia?: string;
-  [key: string]: string | undefined;
-}
+import { Rating } from "./Rating";
 
 export interface Movie {
   Title: string;

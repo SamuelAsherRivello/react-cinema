@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { Movie } from '../types';
+import { Movie } from '../data/Movie';
 
 interface TriviaProps {
   movies: Movie[];

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FaStar, FaRegStar, FaStarHalfAlt, FaInfoCircle } from 'react-icons/fa';
-import { Movie } from '../types';
+import { Movie } from '../data/Movie';
 
 interface MovieListProps {
   movies: Movie[];

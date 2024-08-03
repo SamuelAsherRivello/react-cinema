@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import './App.css';
-import MovieList from './components/MovieList';
-import Trivia from './components/Trivia';
-import { MovieData } from './MovieData';
-import { Movie } from './types';
+import { Movie } from '../data/Movie';
+import MovieList from './MovieList';
+import Trivia from './Trivia';
+import { MovieData } from '../data/MovieData';
+import './../../../styles/Index.css';
 
 function App() {
   const [movies] = useState<Movie[]>(MovieData );
