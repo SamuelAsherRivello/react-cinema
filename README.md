@@ -5,12 +5,13 @@ This interactive movie listings app is created with [React](https://react.dev/),
 <BR>
 
 <figure>
-<img alt="screenshot"
+  <a href="https://samuelasherrivello.github.io/react-cinema/index.html">
+    <img alt="screenshot"
 src="./React/documentation/Screenshot01.png"
 width = "600"
->
+    >
+  </a>
 </figure>
-
 <BR>
 
 
