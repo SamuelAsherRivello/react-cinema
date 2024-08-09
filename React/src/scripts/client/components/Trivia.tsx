@@ -17,13 +17,16 @@ const Trivia: React.FC<TriviaProps> = ({ movies }) => {
     // Find the movie with the biggest disagreement
     let biggestDisagreement = { movie: null as Movie | null, difference: 0 };
     movies.forEach(movie => {
-      const asherRating = parseFloat(movie.meta.ratings.find(r => 'Asher' in r)?.Asher || '0');
-      const juliaRating = parseFloat(movie.meta.ratings.find(r => 'Julia' in r)?.Julia || '0');
-      const difference = Math.abs(asherRating - juliaRating);
+      const asherRating = movie.meta.ratings.find(r => 'Asher' in r)?.Asher;
+      const juliaRating = movie.meta.ratings.find(r => 'Julia' in r)?.Julia;
+      const asherRatingValue = asherRating ? parseFloat(asherRating.rating) : 0;
+      const juliaRatingValue = juliaRating ? parseFloat(juliaRating.rating) : 0;
+      const difference = Math.abs(asherRatingValue - juliaRatingValue);
       if (difference > biggestDisagreement.difference) {
         biggestDisagreement = { movie, difference };
       }
-    });
+    }); 
+
 
     // Count movies by year
     const moviesByYear = movies.reduce((acc, movie) => {

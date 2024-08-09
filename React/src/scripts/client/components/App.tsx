@@ -6,17 +6,22 @@ import { MovieData } from '../data/MovieData';
 import './../../../styles/Index.css';
 
 function App() {
-  const [movies] = useState<Movie[]>(MovieData );
+  const [movies] = useState<Movie[]>(MovieData);
 
   const sortedByYear = [...movies].sort((a, b) => a.Year.localeCompare(b.Year));
   const sortedByAsherRating = [...movies].sort((a, b) => {
-    const aRating = parseFloat(a.meta.ratings.find(r => 'Asher' in r)?.Asher || '0');
-    const bRating = parseFloat(b.meta.ratings.find(r => 'Asher' in r)?.Asher || '0');
+    const aRatingObj = a.meta.ratings.find(rating => rating['Asher']);
+    const bRatingObj = b.meta.ratings.find(rating => rating['Asher']);
+    const aRating = aRatingObj ? parseFloat(aRatingObj['Asher'].rating) : 0;
+    const bRating = bRatingObj ? parseFloat(bRatingObj['Asher'].rating) : 0;
     return bRating - aRating || a.Year.localeCompare(b.Year);
   });
+  
   const sortedByJuliaRating = [...movies].sort((a, b) => {
-    const aRating = parseFloat(a.meta.ratings.find(r => 'Julia' in r)?.Julia || '0');
-    const bRating = parseFloat(b.meta.ratings.find(r => 'Julia' in r)?.Julia || '0');
+    const aRatingObj = a.meta.ratings.find(rating => rating['Julia']);
+    const bRatingObj = b.meta.ratings.find(rating => rating['Julia']);
+    const aRating = aRatingObj ? parseFloat(aRatingObj['Julia'].rating) : 0;
+    const bRating = bRatingObj ? parseFloat(bRatingObj['Julia'].rating) : 0;
     return bRating - aRating || a.Year.localeCompare(b.Year);
   });
 

@@ -1,7 +1,7 @@
 import { Movie } from "./Movie";
 
-export const MovieData : Movie[] = [
-{
+export const MovieData: Movie[] = [
+  {
     "Title": "Civil War",
     "Year": "2024",
     "imdbID": "tt17279496",
@@ -10,8 +10,8 @@ export const MovieData : Movie[] = [
     "meta": {
       "description": "A race to the White House in a torn America. Journalists risk their lives to report on a nation's descent into civil war and martial law.",
       "ratings": [
-        {"Asher": "4.5"},
-        {"Julia": "4.5"}
+        { "Asher": { "rating": "4.5", "reaction": "" } },
+        { "Julia": { "rating": "4.5", "reaction": "Thriller total, deja mucho que pensar sobre la vivencia estresante de su protagonista, me gustó" } }
       ]
     }
   },
@@ -24,8 +24,8 @@ export const MovieData : Movie[] = [
     "meta": {
       "description": "Experience the day the world went quiet. A prequel to the post-apocalyptic horror films 'A Quiet Place' and 'A Quiet Place Part II'.",
       "ratings": [
-        {"Asher": "4"},
-        {"Julia": "4.5"}
+        { "Asher": { "rating": "4", "reaction": "" } },
+        { "Julia": { "rating": "4.5", "reaction": "Muy buena de inicio a fin, mención honrosa para el gatito que sólo dijo un \"miau\" cuando se supo a salvo" } }
       ]
     }
   },
@@ -38,8 +38,8 @@ export const MovieData : Movie[] = [
     "meta": {
       "description": "The origin story of renegade warrior Furiosa before she teamed up with Mad Max in 'Fury Road'.",
       "ratings": [
-        {"Asher": "4"},
-        {"Julia": "4"}
+        { "Asher": { "rating": "4", "reaction": "" } },
+        { "Julia": { "rating": "4", "reaction": "Buen argumento, mención especial sobre la \"mordidita\" salvadora" } }
       ]
     }
   },
@@ -52,8 +52,8 @@ export const MovieData : Movie[] = [
     "meta": {
       "description": "Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family.",
       "ratings": [
-        {"Asher": "2"},
-        {"Julia": "4"}
+        { "Asher": { "rating": "2", "reaction": "" } },
+        { "Julia": { "rating": "4", "reaction": "Me pareció interesante, similar a Star wars, atrapante" } }
       ]
     }
   },
@@ -66,8 +66,8 @@ export const MovieData : Movie[] = [
     "meta": {
       "description": "A group of criminals kidnap the 12-year-old ballerina daughter of a powerful underworld figure. They soon discover that their young hostage is not who she appears to be.",
       "ratings": [
-        {"Asher": "3.5"},
-        {"Julia": "4"}
+        { "Asher": { "rating": "3.5", "reaction": "" } },
+        { "Julia": { "rating": "4", "reaction": "Interesante giro en la trama, me mantuvo intrigada" } }
       ]
     }
   },
@@ -80,8 +80,8 @@ export const MovieData : Movie[] = [
     "meta": {
       "description": "Romance and suspense ensue in Paris as a woman is pursued by several men who want a fortune her murdered husband had stolen. Whom can she trust?",
       "ratings": [
-        {"Asher": "3"},
-        {"Julia": "3"}
+        { "Asher": { "rating": "3", "reaction": "" } },
+        { "Julia": { "rating": "3", "reaction": "Clásico del cine, entretenida pero un poco predecible" } }
       ]
     }
   },
@@ -94,8 +94,8 @@ export const MovieData : Movie[] = [
     "meta": {
       "description": "A family looks to prevent evil spirits from trapping their comatose child in a realm called The Further.",
       "ratings": [
-        {"Asher": "3"},
-        {"Julia": "3.5"}
+        { "Asher": { "rating": "3", "reaction": "" } },
+        { "Julia": { "rating": "3.5", "reaction": "Bastante aterradora, buenos sustos" } }
       ]
     }
   },
@@ -108,8 +108,8 @@ export const MovieData : Movie[] = [
     "meta": {
       "description": "In 1918, a young woman on the brink of madness pursues stardom in a desperate attempt to escape the drudgery, isolation and lovelessness of life on her parents' farm.",
       "ratings": [
-        {"Asher": "4"},
-        {"Julia": "3"}
+        { "Asher": { "rating": "4", "reaction": "" } },
+        { "Julia": { "rating": "3", "reaction": "Interesante pero un poco lenta en algunas partes" } }
       ]
     }
   },
@@ -122,8 +122,8 @@ export const MovieData : Movie[] = [
     "meta": {
       "description": "In 1979, a group of young filmmakers set out to make an adult film in rural Texas, but when their reclusive, elderly hosts catch them in the act, the cast find themselves fighting for their lives.",
       "ratings": [
-        {"Asher": "4"},
-        {"Julia": "4"}
+        { "Asher": { "rating": "4", "reaction": "" } },
+        { "Julia": { "rating": "4", "reaction": "" } }
       ]
     }
   },
@@ -136,8 +136,8 @@ export const MovieData : Movie[] = [
     "meta": {
       "description": "A twisted tale of two estranged sisters whose reunion is cut short by the rise of flesh-possessing demons, thrusting them into a primal battle for survival as they face the most nightmarish version of family imaginable.",
       "ratings": [
-        {"Asher": "3"},
-        {"Julia": "3.5"}
+        { "Asher": { "rating": "3", "reaction": "" } },
+        { "Julia": { "rating": "3.5", "reaction": "" } }
       ]
     }
   },
@@ -149,9 +149,9 @@ export const MovieData : Movie[] = [
     "Poster": "https://m.media-amazon.com/images/M/MV5BYzk2ZTVhOWMtMWQxYS00OWQzLWFmY2QtODQ4NGFmNGQxZWVmXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg",
     "meta": {
       "description": "Five friends head to a remote cabin, where the discovery of a Book of the Dead leads them to unwittingly summon up demons living in the nearby woods.",
-      "ratings": [
-        {"Asher": "3.5"},
-        {"Julia": "2"}
+      "ratings": [       
+         { "Asher": { "rating": "4", "reaction": "" } },
+        { "Julia": { "rating": "3", "reaction": "Interesante pero un poco lenta en algunas partes" } }
       ]
     }
   },
@@ -164,8 +164,8 @@ export const MovieData : Movie[] = [
     "meta": {
       "description": "Sophie reflects on the shared joy and private melancholy of a holiday she took with her father twenty years earlier. Memories real and imagined fill the gaps between miniDV footage as she tries to reconcile the father she knew with the man she didn't.",
       "ratings": [
-        {"Asher": "4"},
-        {"Julia": "3"}
+        { "Asher": { "rating": "4", "reaction": "" } },
+        { "Julia": { "rating": "3", "reaction": "" } }
       ]
     }
   },
@@ -178,8 +178,8 @@ export const MovieData : Movie[] = [
     "meta": {
       "description": "A wisecracking mercenary gets experimented on and becomes immortal but ugly, and sets out to track down the man who ruined his looks.",
       "ratings": [
-        {"Asher": "4.5"},
-        {"Julia": "4"}
+        { "Asher": { "rating": "4.5", "reaction": "" } },
+        { "Julia": { "rating": "4", "reaction": "" } }
       ]
     }
   },
@@ -191,9 +191,9 @@ export const MovieData : Movie[] = [
     "Poster": "https://m.media-amazon.com/images/M/MV5BMTQ0NTk2MTYtMWZlYS00ZTliLThmZTEtNDVkODgxNmQ2ZGM2XkEyXkFqcGdeQXVyNTc4MjczMTM@._V1_SX300.jpg",
     "meta": {
       "description": "Foul-mouthed mutant mercenary Wade Wilson (a.k.a. Deadpool) assembles a team of fellow mutant rogues to protect a young boy with supernatural abilities from the brutal, time-traveling cyborg Cable.",
-      "ratings": [
-        {"Asher": "4"},
-        {"Julia": "4"}
+      "ratings": [     
+         { "Asher": { "rating": "4", "reaction": "" } },
+        { "Julia": { "rating": "4", "reaction": "" } }
       ]
     }
   },
@@ -206,8 +206,8 @@ export const MovieData : Movie[] = [
     "meta": {
       "description": "Wolverine is recovering from his injuries when Deadpool arrives, seeking his help. The two must work together to face a common enemy.",
       "ratings": [
-        {"Asher": "4"},
-        {"Julia": "5"}
+        { "Asher": { "rating": "4", "reaction": "" } },
+        { "Julia": { "rating": "5", "reaction": "" } }
       ]
     }
   },
@@ -220,8 +220,8 @@ export const MovieData : Movie[] = [
     "meta": {
       "description": "A woman staying at an Airbnb discovers that the house she has rented is not what it seems.",
       "ratings": [
-        {"Asher": "5"},
-        {"Julia": "4.5"}
+        { "Asher": { "rating": "5", "reaction": "" } },
+        { "Julia": { "rating": "4.5", "reaction": "" } }
       ]
     }
   }, 
@@ -232,10 +232,10 @@ export const MovieData : Movie[] = [
     "Type": "movie",
     "Poster": "https://m.media-amazon.com/images/M/MV5BMjIzNjEyMzcwOF5BMl5BanBnXkFtZTcwMTkyMjE0NQ@@._V1_SX300.jpg",
     "meta": {
-      "description": "",
+      "description": "During the summer of 1979, a group of friends witness a train crash and investigate subsequent unexplained events in their small town.",
       "ratings": [
-        {"Asher": "4.5"},
-        {"Julia": "4"}
+        { "Asher": { "rating": "4.5", "reaction": "" } },
+        { "Julia": { "rating": "4", "reaction": "" } }
       ]
     }
   },
@@ -248,8 +248,8 @@ export const MovieData : Movie[] = [
     "meta": {
       "description": "After witnessing a bizarre, traumatic incident involving a patient, a psychiatrist becomes increasingly convinced she is being threatened by an uncanny entity.",
       "ratings": [
-        {"Asher": "3"},
-        {"Julia": "3"}
+        { "Asher": { "rating": "3", "reaction": "" } },
+        { "Julia": { "rating": "3", "reaction": "" } }
       ]
     }
   }

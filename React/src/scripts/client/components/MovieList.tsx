@@ -95,12 +95,12 @@ const MovieList: React.FC<MovieListProps> = ({ movies }) => {
           </div>
           <div className="ratings">
             {movie.meta.ratings.map((rating, rIndex) => {
-              const [reviewer, score] = Object.entries(rating)[0];
+            const [reviewer] = Object.entries(rating)[0];
               return (
                 <div key={rIndex} className="rating">
                   <span className="name">{reviewer}</span>
                   <div className="stars">
-                    {renderStars(parseFloat(score as string))}
+                    {renderStars(parseFloat(movie.meta.ratings[rIndex][reviewer].rating))}
                   </div>
                 </div>
               );
