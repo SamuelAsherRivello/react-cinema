@@ -97,7 +97,7 @@ body {
   transition: opacity 0.3s;
 }
 
-.movie .tooltip {
+.movie .movie-item-info {
   position: absolute;
   top: 0;
   left: 0;
@@ -106,13 +106,26 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  opacity: 1;
   z-index: 1;
+  transition: opacity 300ms ease-in-out;
 }
 
-.movie .tooltip-content {
+.movie .movie-item-info-reviewer-icon {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  padding: 5px;
+  color: #ffc107;
+  z-index: 2;
+}
+
+.movie .movie-item-info-content {
   padding: 10px;
   text-align: center;
   font-size: 0.9em;
@@ -121,9 +134,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  white-space: pre-wrap;
 }
 
-.movie .tooltip-content p {
+.movie .movie-item-info-content p {
   margin-bottom: 10px;
 }
 
@@ -145,6 +159,8 @@ body {
 .movie .ratings {
   margin-top: 10px;
   width: 100%;
+  user-select: none;
+  cursor: pointer;
 }
 
 .movie .rating {
@@ -174,16 +190,18 @@ body {
 
 /* Scrollbar styling */
 .movie-list::-webkit-scrollbar {
-  height: 8px;
+  height: 15px;
+
 }
 
 .movie-list::-webkit-scrollbar-track {
   background: #f1f1f1;
+  border-radius: 5px;
 }
 
 .movie-list::-webkit-scrollbar-thumb {
   background: #888;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 .movie-list::-webkit-scrollbar-thumb:hover {

@@ -1,5 +1,5 @@
 {
-  "homepage": "https://samuelasherrivello.github.io/react-cinema/",
+  "homepage": "https://github.com/SamuelAsherRivello/react-cinema/",
   "name": "react-ts",
   "private": true,
   "version": "0.0.0",
@@ -9,8 +9,7 @@
     "client-build": "tsc -b && vite build",
     "client-start-watch": "vite",
     "PAGES  ----------------------------------------------------": "",
-    "pages-build": "npm run client-build",
-    "pages-start": "gh-pages -d dist",
+    "pages-build": "npm run client-build && gh-pages -d dist",
     "MISC  ----------------------------------------------------": ""
   },
   "dependencies": {

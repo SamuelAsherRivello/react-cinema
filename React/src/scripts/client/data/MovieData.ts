@@ -1,4 +1,4 @@
-import { Movie } from "./Movie";
+import { Movie } from "./DataTypes";
 
 export const MovieData: Movie[] = [
   {
@@ -10,8 +10,8 @@ export const MovieData: Movie[] = [
     "meta": {
       "description": "A race to the White House in a torn America. Journalists risk their lives to report on a nation's descent into civil war and martial law.",
       "ratings": [
-        { "Asher": { "rating": "4.5", "reaction": "Coming soon..." } },
-        { "Julia": { "rating": "4.5", "reaction": "Thriller total, deja mucho que pensar sobre la vivencia estresante de su protagonista, me gustó" } }
+        { "Asher": { "rating": "4.5", "reaction": "Intense and gripping. The action scenes had me on the edge of my seat." } },
+        { "Julia": { "rating": "4.5", "reaction": "Thriller total, deja mucho que pensar sobre la vivencia estresante de su protagonista, me gustó." } }
       ]
     }
   },
@@ -24,8 +24,8 @@ export const MovieData: Movie[] = [
     "meta": {
       "description": "Experience the day the world went quiet. A prequel to the post-apocalyptic horror films 'A Quiet Place' and 'A Quiet Place Part II'.",
       "ratings": [
-        { "Asher": { "rating": "4", "reaction": "Coming soon..." } },
-        { "Julia": { "rating": "4.5", "reaction": "Muy buena de inicio a fin, mención honrosa para el gatito que sólo dijo un \"miau\" cuando se supo a salvo" } }
+        { "Asher": { "rating": "4", "reaction": "The tension builds slowly but surely. Solid prequel." } },
+        { "Julia": { "rating": "4.5", "reaction": "Muy buena de inicio a fin, mención honrosa para el gatito que sólo dijo un \"miau\" cuando se supo a salvo." } }
       ]
     }
   },
@@ -38,8 +38,8 @@ export const MovieData: Movie[] = [
     "meta": {
       "description": "The origin story of renegade warrior Furiosa before she teamed up with Mad Max in 'Fury Road'.",
       "ratings": [
-        { "Asher": { "rating": "4", "reaction": "Coming soon..." } },
-        { "Julia": { "rating": "4", "reaction": "Buen argumento, mención especial sobre la \"mordidita\" salvadora" } }
+        { "Asher": { "rating": "4", "reaction": "Raw and gritty. The action sequences are insane, and the backstory adds depth to Furiosa's character." } },
+        { "Julia": { "rating": "4", "reaction": "Buen argumento, mención especial sobre la \"mordidita\" salvadora." } }
       ]
     }
   },
@@ -52,8 +52,8 @@ export const MovieData: Movie[] = [
     "meta": {
       "description": "Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family.",
       "ratings": [
-        { "Asher": { "rating": "2", "reaction": "Coming soon..." } },
-        { "Julia": { "rating": "4", "reaction": "Me pareció interesante, similar a Star wars, atrapante" } }
+        { "Asher": { "rating": "2", "reaction": "Disappointing sequel. Too much sand." } },
+        { "Julia": { "rating": "4", "reaction": "Me pareció interesante, similar a Star wars, atrapante." } }
       ]
     }
   },
@@ -66,8 +66,8 @@ export const MovieData: Movie[] = [
     "meta": {
       "description": "A group of criminals kidnap the 12-year-old ballerina daughter of a powerful underworld figure. They soon discover that their young hostage is not who she appears to be.",
       "ratings": [
-        { "Asher": { "rating": "3.5", "reaction": "Coming soon..." } },
-        { "Julia": { "rating": "4", "reaction": "Interesante giro en la trama, me mantuvo intrigada" } }
+        { "Asher": { "rating": "3.5", "reaction": "Surprisingly good. The twist caught me off guard." } },
+        { "Julia": { "rating": "4", "reaction": "Interesante giro en la trama, me mantuvo intrigada." } }
       ]
     }
   },
@@ -80,8 +80,8 @@ export const MovieData: Movie[] = [
     "meta": {
       "description": "Romance and suspense ensue in Paris as a woman is pursued by several men who want a fortune her murdered husband had stolen. Whom can she trust?",
       "ratings": [
-        { "Asher": { "rating": "3", "reaction": "Coming soon..." } },
-        { "Julia": { "rating": "3", "reaction": "Clásico del cine, entretenida pero un poco predecible" } }
+        { "Asher": { "rating": "3", "reaction": "Classic Hitchcock-style thriller. Hepburn and Grant's chemistry is undeniable." } },
+        { "Julia": { "rating": "3", "reaction": "Clásico del cine, entretenida pero un poco predecible." } }
       ]
     }
   },
@@ -94,8 +94,8 @@ export const MovieData: Movie[] = [
     "meta": {
       "description": "A family looks to prevent evil spirits from trapping their comatose child in a realm called The Further.",
       "ratings": [
-        { "Asher": { "rating": "3", "reaction": "Coming soon..." } },
-        { "Julia": { "rating": "3.5", "reaction": "Bastante aterradora, buenos sustos" } }
+        { "Asher": { "rating": "3", "reaction": "Some genuinely creepy moments, but relies too much on jump scares." } },
+        { "Julia": { "rating": "3.5", "reaction": "Bastante aterradora, buenos sustos." } }
       ]
     }
   },
@@ -108,8 +108,8 @@ export const MovieData: Movie[] = [
     "meta": {
       "description": "In 1918, a young woman on the brink of madness pursues stardom in a desperate attempt to escape the drudgery, isolation and lovelessness of life on her parents' farm.",
       "ratings": [
-        { "Asher": { "rating": "4", "reaction": "Coming soon..." } },
-        { "Julia": { "rating": "3", "reaction": "Interesante pero un poco lenta en algunas partes" } }
+        { "Asher": { "rating": "4", "reaction": "Mia Goth's performance is natural and well-crafted."} },
+        { "Julia": { "rating": "3", "reaction": "Interesante pero un poco lenta en algunas partes." } }
       ]
     }
   },
@@ -122,8 +122,8 @@ export const MovieData: Movie[] = [
     "meta": {
       "description": "In 1979, a group of young filmmakers set out to make an adult film in rural Texas, but when their reclusive, elderly hosts catch them in the act, the cast find themselves fighting for their lives.",
       "ratings": [
-        { "Asher": { "rating": "4", "reaction": "Coming soon..." } },
-        { "Julia": { "rating": "4", "reaction": "" } }
+        { "Asher": { "rating": "4", "reaction": "A fresh take on the slasher genre with 70s aesthetic." } },
+        { "Julia": { "rating": "4", "reaction": "La simplicidad del terror, vieja loca cachonda y esposo leal, para qué más!" } }
       ]
     }
   },
@@ -136,8 +136,8 @@ export const MovieData: Movie[] = [
     "meta": {
       "description": "A twisted tale of two estranged sisters whose reunion is cut short by the rise of flesh-possessing demons, thrusting them into a primal battle for survival as they face the most nightmarish version of family imaginable.",
       "ratings": [
-        { "Asher": { "rating": "3", "reaction": "Coming soon..." } },
-        { "Julia": { "rating": "3.5", "reaction": "" } }
+        { "Asher": { "rating": "3", "reaction": "The urban setting adds a new flavor, and improves on the original." } },
+        { "Julia": { "rating": "3.5", "reaction": "Miedo desde los primeros minutos, buena" } }
       ]
     }
   },
@@ -150,7 +150,7 @@ export const MovieData: Movie[] = [
     "meta": {
       "description": "Five friends head to a remote cabin, where the discovery of a Book of the Dead leads them to unwittingly summon up demons living in the nearby woods.",
       "ratings": [       
-         { "Asher": { "rating": "4", "reaction": "Coming soon..." } },
+         { "Asher": { "rating": "4", "reaction": "Less campy than the original, but makes up for it with visceral horror." } },
         { "Julia": { "rating": "3", "reaction": "Interesante pero un poco lenta en algunas partes" } }
       ]
     }
@@ -164,8 +164,8 @@ export const MovieData: Movie[] = [
     "meta": {
       "description": "Sophie reflects on the shared joy and private melancholy of a holiday she took with her father twenty years earlier. Memories real and imagined fill the gaps between miniDV footage as she tries to reconcile the father she knew with the man she didn't.",
       "ratings": [
-        { "Asher": { "rating": "4", "reaction": "Coming soon..." } },
-        { "Julia": { "rating": "3", "reaction": "" } }
+        { "Asher": { "rating": "4", "reaction": "A poignant, nostalgic journey. It's a slow burn. Beautifully shot." } },
+        { "Julia": { "rating": "3", "reaction": "Peli de descubrimiento, tierna y realista. Conmovedora" } }
       ]
     }
   },
@@ -178,8 +178,8 @@ export const MovieData: Movie[] = [
     "meta": {
       "description": "A wisecracking mercenary gets experimented on and becomes immortal but ugly, and sets out to track down the man who ruined his looks.",
       "ratings": [
-        { "Asher": { "rating": "4.5", "reaction": "Coming soon..." } },
-        { "Julia": { "rating": "4", "reaction": "" } }
+        { "Asher": { "rating": "4.5", "reaction": "Hilarious and action-packed. Reynolds was born to play Deadpool." } },
+        { "Julia": { "rating": "4", "reaction": "Diversión, romance, antihéroe con humor negro, combinación perfecta!" } }
       ]
     }
   },
@@ -192,8 +192,8 @@ export const MovieData: Movie[] = [
     "meta": {
       "description": "Foul-mouthed mutant mercenary Wade Wilson (a.k.a. Deadpool) assembles a team of fellow mutant rogues to protect a young boy with supernatural abilities from the brutal, time-traveling cyborg Cable.",
       "ratings": [     
-         { "Asher": { "rating": "4", "reaction": "Coming soon..." } },
-        { "Julia": { "rating": "4", "reaction": "" } }
+         { "Asher": { "rating": "4", "reaction": "Even more outrageous than the first." } },
+        { "Julia": { "rating": "4", "reaction": "La locura continúa. Se aprecia el lado humano de Wade, sin dejar de lado su desparpajo" } }
       ]
     }
   },
@@ -206,8 +206,8 @@ export const MovieData: Movie[] = [
     "meta": {
       "description": "Wolverine is recovering from his injuries when Deadpool arrives, seeking his help. The two must work together to face a common enemy.",
       "ratings": [
-        { "Asher": { "rating": "4", "reaction": "Coming soon..." } },
-        { "Julia": { "rating": "5", "reaction": "" } }
+        { "Asher": { "rating": "4", "reaction": "The team-up we've all been waiting for! The banter between Deadpool and Wolverine is pure gold." } },
+        { "Julia": { "rating": "5", "reaction": "Me encantó! sólo de escuchar los nombres de estos dos antihéroes es éxito garantizado. Mención honrosa a la música ... y por supuesto a la adorable, majestuosa, hermosa, empoderada y apretujable ... Dogpool!" } }
       ]
     }
   },
@@ -220,8 +220,8 @@ export const MovieData: Movie[] = [
     "meta": {
       "description": "A woman staying at an Airbnb discovers that the house she has rented is not what it seems.",
       "ratings": [
-        { "Asher": { "rating": "5", "reaction": "Coming soon..." } },
-        { "Julia": { "rating": "4.5", "reaction": "" } }
+        { "Asher": { "rating": "5", "reaction": "Mind-blowing horror. A modern horror classic." } },
+        { "Julia": { "rating": "4.5", "reaction": "De esas pelis inesperadas, con un giro en la trama de terror. MUY BUENA!" } }
       ]
     }
   }, 
@@ -234,8 +234,8 @@ export const MovieData: Movie[] = [
     "meta": {
       "description": "During the summer of 1979, a group of friends witness a train crash and investigate subsequent unexplained events in their small town.",
       "ratings": [
-        { "Asher": { "rating": "4.5", "reaction": "Coming soon..." } },
-        { "Julia": { "rating": "4", "reaction": "" } }
+        { "Asher": { "rating": "4.5", "reaction": "Spielberg-esque nostalgia at its finest. A love letter to 80's cinema." } },
+        { "Julia": { "rating": "4", "reaction": "Entretenida, creativa, extraterrestres, me gustó" } }
       ]
     }
   },
@@ -248,8 +248,23 @@ export const MovieData: Movie[] = [
     "meta": {
       "description": "After witnessing a bizarre, traumatic incident involving a patient, a psychiatrist becomes increasingly convinced she is being threatened by an uncanny entity.",
       "ratings": [
-        { "Asher": { "rating": "3", "reaction": "Coming soon..." } },
-        { "Julia": { "rating": "3", "reaction": "" } }
+        { "Asher": { "rating": "3", "reaction": "Decent psychological horror with some effective scares. The 3rd act falls of a cliff and loses itself." } },
+        { "Julia": { "rating": "3", "reaction": "Buen inicio, buenas actuaciones, no me gustó que salga `la prima de Barbarian`." } }
+      ]
+    }
+  }
+  ,
+  {
+    "Title": "The Zone of Interest",
+    "Year": "2023",
+    "imdbID": "tt7160372",
+    "Type": "movie",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BYzRmOGQwZjktYjM2Ni00M2NmLWFlZDYtZGFhM2RkM2VhZDI1XkEyXkFqcGdeQXVyMTM1NjM2ODg1._V1_SX300.jpg",
+    "meta": {
+      "description": "Auschwitz commandant Rudolf Höss and his wife Hedwig strive to build a dream life for their family in a house and garden beside the camp.",
+      "ratings": [
+        { "Asher": { "rating": "3.5", "reaction": "A chilling, uncomfortable watch. Important film." } },
+        { "Julia": { "rating": "3.5", "reaction": "Coming soon..." } }
       ]
     }
   }

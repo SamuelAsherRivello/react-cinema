@@ -1,13 +1,33 @@
 import React, { useEffect, useState } from 'react';
 import { FaStar, FaRegStar, FaStarHalfAlt, FaInfoCircle } from 'react-icons/fa';
-import { Movie } from '../data/Movie';
+import { Movie } from '../data/DataTypes';
+import MovieItemInfo from './MovieItemInfo';
 
 interface MovieListProps {
   movies: Movie[];
 }
 
+enum Mode {
+  Description,
+  Reaction
+}
+
+interface MovieItemInfoState {
+  movieId: string | null;
+  mode: Mode | null;
+  content: string | null;
+  visible: boolean;
+  reviewer: string | null;
+}
+
 const MovieList: React.FC<MovieListProps> = ({ movies }) => {
-  const [openTooltip, setOpenTooltip] = useState<string | null>(null);
+  const [movieItemInfoState, setMovieItemInfoState] = useState<MovieItemInfoState>({ 
+    movieId: null, 
+    mode: null, 
+    content: null, 
+    visible: false, 
+    reviewer: null 
+  });
 
   const renderStars = (rating: number): JSX.Element[] => {
     const stars: JSX.Element[] = [];
@@ -52,15 +72,33 @@ const MovieList: React.FC<MovieListProps> = ({ movies }) => {
     });
   }, [movies]);
 
-  const handleImageClick = (imdbID: string, e: React.MouseEvent) => {
+  const showMovieInfo = (movieId: string | null, mode: Mode | null = null, content: string | null = null, reviewer: string | null = null) => {
+    let visible = content !== null;
+    setMovieItemInfoState({ movieId, mode, content, visible, reviewer });
+  };
+
+  const handleImageClick = (imdbID: string, description: string, e: React.MouseEvent) => {
     e.stopPropagation();
-    setOpenTooltip(openTooltip === imdbID ? null : imdbID);
+    if (movieItemInfoState.movieId === imdbID && movieItemInfoState.mode === Mode.Description) {
+      showMovieInfo(null);
+    } else {
+      showMovieInfo(imdbID, Mode.Description, description);
+    }
+  };
+
+  const handleReviewerMouseEnter = (imdbID: string, reviewer: string, rating: any) => {
+    let content = `"${rating.reaction}"`;
+    showMovieInfo(imdbID, Mode.Reaction, content, reviewer);
+  };
+
+  const handleReviewerMouseLeave = () => {
+    showMovieInfo(null);
   };
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
-      if (openTooltip && !(e.target as Element).closest('.image-container')) {
-        setOpenTooltip(null);
+      if (movieItemInfoState.movieId && !(e.target as Element).closest('.movie-image')) {
+        showMovieInfo(null);
       }
     };
 
@@ -68,7 +106,7 @@ const MovieList: React.FC<MovieListProps> = ({ movies }) => {
     return () => {
       document.removeEventListener('click', handleClickOutside);
     };
-  }, [openTooltip]);
+  }, [movieItemInfoState]);
 
   return (
     <div className="movie-list">
@@ -77,30 +115,33 @@ const MovieList: React.FC<MovieListProps> = ({ movies }) => {
           <div className="title">
             <span className="title-text">{`${index + 1}. ${movie.Title} (${movie.Year})`}</span>
           </div>
-          <div className="image-container" onClick={(e) => handleImageClick(movie.imdbID, e)}>
-            <img src={movie.Poster} alt={movie.Title} />
+          <div className="image-container">
+            <img
+              src={movie.Poster}
+              alt={movie.Title}
+              className="movie-image"
+              onClick={(e) => handleImageClick(movie.imdbID, movie.meta.description, e)}
+            />
             <div className="info-icon">
               <FaInfoCircle />
             </div>
-            {openTooltip === movie.imdbID && (
-              <div className="tooltip">
-                <div className="tooltip-content">
-                  <p>{movie.meta.description}</p>
-                  <a href={getImdbUrl(movie.imdbID)} target="_blank" rel="noopener noreferrer" className="read-more-btn">
-                    Read More on IMDb
-                  </a>
-                </div>
-              </div>
-            )}
+            <MovieItemInfo movieItemInfoState={movieItemInfoState} movieId={movie.imdbID} getImdbUrl={getImdbUrl} />
           </div>
           <div className="ratings">
             {movie.meta.ratings.map((rating, rIndex) => {
-            const [reviewer] = Object.entries(rating)[0];
+              const [reviewer] = Object.entries(rating)[0];
+              const reviewerRating = movie.meta.ratings[rIndex][reviewer];
               return (
-                <div key={rIndex} className="rating">
-                  <span className="name">{reviewer}</span>
+                <div key={rIndex} className="rating"       
+                onMouseEnter={() => handleReviewerMouseEnter(movie.imdbID, reviewer, reviewerRating)}
+                onMouseLeave={handleReviewerMouseLeave}
+                onClick={(evt) => evt.stopPropagation()} 
+                >
+                  <span className="name" >
+                    {reviewer}
+                  </span>
                   <div className="stars">
-                    {renderStars(parseFloat(movie.meta.ratings[rIndex][reviewer].rating))}
+                    {renderStars(parseFloat(reviewerRating.rating))}
                   </div>
                 </div>
               );
