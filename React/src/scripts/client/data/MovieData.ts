@@ -224,8 +224,8 @@ export const MovieData : Movie[] = [
         {"Julia": "4.5"}
       ]
     }
-  }
-  , {
+  }, 
+  {
     "Title": "Super8",
     "Year": "2011",
     "imdbID": "tt1650062",
@@ -236,6 +236,20 @@ export const MovieData : Movie[] = [
       "ratings": [
         {"Asher": "4.5"},
         {"Julia": "4"}
+      ]
+    }
+  },
+  {
+    "Title": "Smile",
+    "Year": "2022",
+    "imdbID": "tt15474916",
+    "Type": "movie",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BZjE2ZWIwMWEtNGFlMy00ZjYzLWEzOWEtYzQ0MDAwZDRhYzNjXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_SX300.jpg",
+    "meta": {
+      "description": "After witnessing a bizarre, traumatic incident involving a patient, a psychiatrist becomes increasingly convinced she is being threatened by an uncanny entity.",
+      "ratings": [
+        {"Asher": "3"},
+        {"Julia": "3"}
       ]
     }
   }
