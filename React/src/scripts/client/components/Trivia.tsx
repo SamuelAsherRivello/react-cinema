@@ -11,7 +11,7 @@ const Trivia: React.FC<TriviaProps> = ({ movies }) => {
     const agreedMovies = movies.filter(movie => {
       const asherRating = movie.meta.ratings.find(r => 'Asher' in r)?.Asher;
       const juliaRating = movie.meta.ratings.find(r => 'Julia' in r)?.Julia;
-      return asherRating === juliaRating;
+      return asherRating && juliaRating && asherRating.rating === juliaRating.rating;
     });
 
     // Find the movie with the biggest disagreement
@@ -25,8 +25,7 @@ const Trivia: React.FC<TriviaProps> = ({ movies }) => {
       if (difference > biggestDisagreement.difference) {
         biggestDisagreement = { movie, difference };
       }
-    }); 
-
+    });
 
     // Count movies by year
     const moviesByYear = movies.reduce((acc, movie) => {
