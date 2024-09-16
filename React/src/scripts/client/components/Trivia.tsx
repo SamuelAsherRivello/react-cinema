@@ -35,9 +35,10 @@ const Trivia: React.FC<TriviaProps> = ({ movies }) => {
     const mostMoviesYear = Object.entries(moviesByYear).reduce((a, b) => a[1] > b[1] ? a : b);
 
     return [
-      `Asher and Julia agree on the ratings of ${agreedMovies.map(m => m.Title).join(', ')}.`,
-      `The biggest disagreement is "${biggestDisagreement.movie?.Title}" with a ${biggestDisagreement.difference} star difference.`,
-      `The year ${mostMoviesYear[0]} has the most movies with ${mostMoviesYear[1]} entries.`
+      `• 👍 Asher and Julia agree on the ratings of ${agreedMovies.map(m => m.Title).join(', ')}.`,
+      `• 👎 The biggest disagreement is "${biggestDisagreement.movie?.Title}" with a ${biggestDisagreement.difference} star difference.`,
+      `• 😕 The biggest surprise is Julia's rating for "Colors of Evil: Red".`,
+      `• 📅 The release year ${mostMoviesYear[0]} has the most movies with ${mostMoviesYear[1]} entries.`
     ];
   }, [movies]);
 

@@ -264,7 +264,67 @@ export const MovieData: Movie[] = [
       "description": "Auschwitz commandant Rudolf Höss and his wife Hedwig strive to build a dream life for their family in a house and garden beside the camp.",
       "ratings": [
         { "Asher": { "rating": "3.5", "reaction": "A chilling, uncomfortable watch. Important film." } },
-        { "Julia": { "rating": "3.5", "reaction": "Coming soon..." } }
+        { "Julia": { "rating": "2.5", "reaction": "La otra cara de la moneda de la segunda guerra mundial ... escalofriante las prioridades de una familia nazi" } }
+      ]
+    }
+  }
+  ,
+  {
+    "Title": "Rosemary's Baby",
+    "Year": "1968",
+    "imdbID": "tt0063522",
+    "Type": "movie",
+    "Poster": "https://www.rogerebert.com/wp-content/uploads/2024/03/Rosemarys-Baby.jpg",
+    "meta": {
+      "description": "A young couple trying for a baby moves into an aging, ornate apartment building on Central Park West, where they find themselves surrounded by peculiar neighbors.",
+      "ratings": [
+        { "Asher": { "rating": "4.5", "reaction": "A timeless classic." } },
+        { "Julia": { "rating": "4", "reaction": "Clásico referencial de terror, envolvente e intrigante" } }
+      ]
+    }
+  }
+  ,
+  {
+    "Title": "Beetlejuice Beetlejuice",
+    "Year": "2024",
+    "imdbID": "tt2049403",
+    "Type": "movie",
+    "Poster": "https://www.rogerebert.com/wp-content/uploads/2024/09/kKgQzkUCnQmeTPkyIwHly2t6ZFI-jpg.webp",
+    "meta": {
+      "description": "After a family tragedy, three generations of the Deetz family return home to Winter River. Still haunted by Beetlejuice, Lydia's life is turned upside down when her teenage daughter, Astrid, accidentally opens the portal to the Afterlife.",
+      "ratings": [
+        { "Asher": { "rating": "2", "reaction": "Fun balance of nostalgia & new." } },
+        { "Julia": { "rating": "2.5", "reaction": "Divertida y entretenida; esperaba más de la villana para un mejor desenlace" } }
+      ]
+    }
+  }
+  ,
+  {
+    "Title": "Colors of Evil: Red",
+    "Year": "2024",
+    "imdbID": "tt27578157",
+    "Type": "movie",
+    "Poster": "https://i0.wp.com/mediamikes.com/wp-content/uploads/2024/05/colors.jpg?w=1000&ssl=1",
+    "meta": {
+      "description": "When a girl's body is found on a beach in Poland's Tricity, a prosecutor teams up with the victim's mother on an impassioned quest for the truth.",
+      "ratings": [
+        { "Asher": { "rating": "2.5", "reaction": "Makes me want to go clubbing in Poland." } },
+        { "Julia": { "rating": "4.5", "reaction": "Thiller policial, es un círculo de mentiras ... las cosas no son como parecen" } }
+      ]
+    }
+  }
+  ,
+  {
+    "Title": "Longlegs",
+    "Year": "2024",
+    "imdbID": "tt23468450",
+    "Type": "movie",
+    "Poster": "https://i0.wp.com/bloody-disgusting.com/wp-content/uploads/2024/06/longlegs-new-poster.jpg?w=823&ssl=1",
+    "meta": {
+      "description": "In pursuit of a serial killer, an FBI agent uncovers a series of occult clues that she must solve to end his terrifying killing spree.",
+      "ratings": [
+        { "Asher": { "rating": "3.5", "reaction": "One of the major twists was a turn-off." } },
+        { "Julia": { "rating": "4", "reaction": "Captura de inicio a fin, escenas impactantes ... sustos garantizados" } }
       ]
     }
   }

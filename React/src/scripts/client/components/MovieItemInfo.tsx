@@ -42,7 +42,7 @@ const MovieItemInfo: React.FC<MovieItemInfoProps> = ({ movieItemInfoState, movie
           <>
             <p>{movieItemInfoState.content}</p>
             <a href={getImdbUrl(movieId)} target="_blank" rel="noopener noreferrer" className="read-more-btn">
-              Read More on IMDb
+              See Imdb.com
             </a>
           </>
         ) : (

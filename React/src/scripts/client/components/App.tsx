@@ -29,16 +29,16 @@ function App() {
     <div className='app'>
       <h1 className="main-title">Cinema 2024 - Best {movies.length} Movies</h1>
       <div className='row'>
-        <h2>Overall</h2>
+        <h2>By Release Date</h2>
         <MovieList movies={sortedByYear} />
-      </div>
-      <div className='row'>
-        <h2>Asher's Favorites</h2>
-        <MovieList movies={sortedByAsherRating} />
       </div>
       <div className='row'>
         <h2>Julia's Favorites</h2>
         <MovieList movies={sortedByJuliaRating} />
+      </div>
+      <div className='row'>
+        <h2>Asher's Favorites</h2>
+        <MovieList movies={sortedByAsherRating} />
       </div>
       <div className='row'>
         <Trivia movies={movies} />
