@@ -359,14 +359,14 @@ export const MovieData: Movie[] = [
   },
   {
     "Title": "Woman of the Hour",
-    "Year": "2023",
+    "Year": "2024",
     "imdbID": "tt18385534",
     "Type": "movie",
     "Poster": "https://image.tmdb.org/t/p/original/7101GL3mbXUSrHiGvANzHM4F0xm.jpg",
     "meta": {
       "description": "The story of a game show contestant who matches with a charming bachelor, unaware that he is a notorious serial killer.",
       "ratings": [
-        { "Asher": { "rating": "6", "reaction": "Spectacular drama with tension." } }, 
+        { "Asher": { "rating": "4.5", "reaction": "Spectacular drama with tension." } }, 
         { "Julia": { "rating": "4.5", "reaction": "Historia desgarradora y cruda, una historia bien contada de hechos reales." } } 
       ]
     }

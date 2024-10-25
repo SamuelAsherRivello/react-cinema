@@ -3,7 +3,7 @@ import { FaStar, FaRegStar, FaStarHalfAlt, FaInfoCircle } from 'react-icons/fa';
 import { Movie } from '../data/DataTypes';
 import MovieItemInfo from './MovieItemInfo';
 
-const MAX_STARS = 6;
+const MAX_STARS = 5;
 
 interface MovieListProps {
   movies: Movie[];
