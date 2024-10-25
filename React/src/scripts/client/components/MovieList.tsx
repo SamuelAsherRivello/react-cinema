@@ -3,6 +3,8 @@ import { FaStar, FaRegStar, FaStarHalfAlt, FaInfoCircle } from 'react-icons/fa';
 import { Movie } from '../data/DataTypes';
 import MovieItemInfo from './MovieItemInfo';
 
+const MAX_STARS = 6;
+
 interface MovieListProps {
   movies: Movie[];
 }
@@ -34,7 +36,7 @@ const MovieList: React.FC<MovieListProps> = ({ movies }) => {
     const fullStars = Math.floor(rating);
     const hasHalfStar = rating % 1 >= 0.5;
 
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < MAX_STARS; i++) {
       if (i < fullStars) {
         stars.push(<FaStar key={i} color="#ffc107" />);
       } else if (i === fullStars && hasHalfStar) {

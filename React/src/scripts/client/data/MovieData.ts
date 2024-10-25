@@ -137,7 +137,7 @@ export const MovieData: Movie[] = [
       "description": "A twisted tale of two estranged sisters whose reunion is cut short by the rise of flesh-possessing demons, thrusting them into a primal battle for survival as they face the most nightmarish version of family imaginable.",
       "ratings": [
         { "Asher": { "rating": "3", "reaction": "The urban setting adds a new flavor, and improves on the original." } },
-        { "Julia": { "rating": "3.5", "reaction": "Miedo desde los primeros minutos, buena" } }
+        { "Julia": { "rating": "3.5", "reaction": "Miedo desde los primeros minutos, buena." } }
       ]
     }
   },
@@ -151,7 +151,7 @@ export const MovieData: Movie[] = [
       "description": "Five friends head to a remote cabin, where the discovery of a Book of the Dead leads them to unwittingly summon up demons living in the nearby woods.",
       "ratings": [       
          { "Asher": { "rating": "4", "reaction": "Less campy than the original, but makes up for it with visceral horror." } },
-        { "Julia": { "rating": "3", "reaction": "Interesante pero un poco lenta en algunas partes" } }
+        { "Julia": { "rating": "3", "reaction": "Interesante pero un poco lenta en algunas partes." } }
       ]
     }
   },
@@ -165,7 +165,7 @@ export const MovieData: Movie[] = [
       "description": "Sophie reflects on the shared joy and private melancholy of a holiday she took with her father twenty years earlier. Memories real and imagined fill the gaps between miniDV footage as she tries to reconcile the father she knew with the man she didn't.",
       "ratings": [
         { "Asher": { "rating": "4", "reaction": "A poignant, nostalgic journey. It's a slow burn. Beautifully shot." } },
-        { "Julia": { "rating": "3", "reaction": "Peli de descubrimiento, tierna y realista. Conmovedora" } }
+        { "Julia": { "rating": "3", "reaction": "Peli de descubrimiento, tierna y realista. Conmovedora." } }
       ]
     }
   },
@@ -193,7 +193,7 @@ export const MovieData: Movie[] = [
       "description": "Foul-mouthed mutant mercenary Wade Wilson (a.k.a. Deadpool) assembles a team of fellow mutant rogues to protect a young boy with supernatural abilities from the brutal, time-traveling cyborg Cable.",
       "ratings": [     
          { "Asher": { "rating": "4", "reaction": "Even more outrageous than the first." } },
-        { "Julia": { "rating": "4", "reaction": "La locura continúa. Se aprecia el lado humano de Wade, sin dejar de lado su desparpajo" } }
+        { "Julia": { "rating": "4", "reaction": "La locura continúa. Se aprecia el lado humano de Wade, sin dejar de lado su desparpajo." } }
       ]
     }
   },
@@ -235,7 +235,7 @@ export const MovieData: Movie[] = [
       "description": "During the summer of 1979, a group of friends witness a train crash and investigate subsequent unexplained events in their small town.",
       "ratings": [
         { "Asher": { "rating": "4.5", "reaction": "Spielberg-esque nostalgia at its finest. A love letter to 80's cinema." } },
-        { "Julia": { "rating": "4", "reaction": "Entretenida, creativa, extraterrestres, me gustó" } }
+        { "Julia": { "rating": "4", "reaction": "Entretenida, creativa, extraterrestres, me gustó." } }
       ]
     }
   },
@@ -264,7 +264,7 @@ export const MovieData: Movie[] = [
       "description": "Auschwitz commandant Rudolf Höss and his wife Hedwig strive to build a dream life for their family in a house and garden beside the camp.",
       "ratings": [
         { "Asher": { "rating": "3.5", "reaction": "A chilling, uncomfortable watch. Important film." } },
-        { "Julia": { "rating": "2.5", "reaction": "La otra cara de la moneda de la segunda guerra mundial ... escalofriante las prioridades de una familia nazi" } }
+        { "Julia": { "rating": "2.5", "reaction": "La otra cara de la moneda de la segunda guerra mundial ... escalofriante las prioridades de una familia nazi." } }
       ]
     }
   }
@@ -279,7 +279,7 @@ export const MovieData: Movie[] = [
       "description": "A young couple trying for a baby moves into an aging, ornate apartment building on Central Park West, where they find themselves surrounded by peculiar neighbors.",
       "ratings": [
         { "Asher": { "rating": "4.5", "reaction": "A timeless classic." } },
-        { "Julia": { "rating": "4", "reaction": "Clásico referencial de terror, envolvente e intrigante" } }
+        { "Julia": { "rating": "4", "reaction": "Clásico referencial de terror, envolvente e intrigante." } }
       ]
     }
   }
@@ -294,7 +294,7 @@ export const MovieData: Movie[] = [
       "description": "After a family tragedy, three generations of the Deetz family return home to Winter River. Still haunted by Beetlejuice, Lydia's life is turned upside down when her teenage daughter, Astrid, accidentally opens the portal to the Afterlife.",
       "ratings": [
         { "Asher": { "rating": "2", "reaction": "Fun balance of nostalgia & new." } },
-        { "Julia": { "rating": "2.5", "reaction": "Divertida y entretenida; esperaba más de la villana para un mejor desenlace" } }
+        { "Julia": { "rating": "2.5", "reaction": "Divertida y entretenida; esperaba más de la villana para un mejor desenlace." } }
       ]
     }
   }
@@ -309,7 +309,7 @@ export const MovieData: Movie[] = [
       "description": "When a girl's body is found on a beach in Poland's Tricity, a prosecutor teams up with the victim's mother on an impassioned quest for the truth.",
       "ratings": [
         { "Asher": { "rating": "2.5", "reaction": "Makes me want to go clubbing in Poland." } },
-        { "Julia": { "rating": "4.5", "reaction": "Thiller policial, es un círculo de mentiras ... las cosas no son como parecen" } }
+        { "Julia": { "rating": "4.5", "reaction": "Thiller policial, es un círculo de mentiras ... las cosas no son como parecen." } }
       ]
     }
   }
@@ -324,7 +324,78 @@ export const MovieData: Movie[] = [
       "description": "In pursuit of a serial killer, an FBI agent uncovers a series of occult clues that she must solve to end his terrifying killing spree.",
       "ratings": [
         { "Asher": { "rating": "3.5", "reaction": "One of the major twists was a turn-off." } },
-        { "Julia": { "rating": "4", "reaction": "Captura de inicio a fin, escenas impactantes ... sustos garantizados" } }
+        { "Julia": { "rating": "4", "reaction": "Captura de inicio a fin, escenas impactantes ... sustos garantizados." } }
+      ]
+    }
+  }
+  ,
+  {
+    "Title": "Reservoir Dogs",
+    "Year": "1992",
+    "imdbID": "tt0105236",
+    "Type": "movie",
+    "Poster": "https://wiki.tarantino.info/images/Reservoirdogsposter6.jpg",
+    "meta": {
+      "description": "After a simple jewelry heist goes terribly wrong, the surviving criminals begin to suspect that one of them is a police informant.",
+      "ratings": [
+        { "Asher": { "rating": "2", "reaction": "A decent crime drama with a twist that did not hold my attention 30 years later." } }, 
+        { "Julia": { "rating": "3", "reaction": "Historia sencilla e intrigante de principio a fin." } } 
+      ]
+    }
+  },
+  {
+    "Title": "Pulp Fiction",
+    "Year": "1994",
+    "imdbID": "tt0110912",
+    "Type": "movie",
+    "Poster": "https://wiki.tarantino.info/images/Pfposter1.jpg",
+    "meta": {
+      "description": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      "ratings": [
+        { "Asher": { "rating": "4", "reaction": "A genre defining crime movie with memorable characters." } }, 
+        { "Julia": { "rating": "3.5", "reaction": "Historias entrelazadas, acción y locura." } } 
+      ]
+    }
+  },
+  {
+    "Title": "Woman of the Hour",
+    "Year": "2023",
+    "imdbID": "tt18385534",
+    "Type": "movie",
+    "Poster": "https://image.tmdb.org/t/p/original/7101GL3mbXUSrHiGvANzHM4F0xm.jpg",
+    "meta": {
+      "description": "The story of a game show contestant who matches with a charming bachelor, unaware that he is a notorious serial killer.",
+      "ratings": [
+        { "Asher": { "rating": "6", "reaction": "Spectacular drama with tension." } }, 
+        { "Julia": { "rating": "4.5", "reaction": "Historia desgarradora y cruda, una historia bien contada de hechos reales." } } 
+      ]
+    }
+  },
+  {
+    "Title": "MaXXXine",
+    "Year": "2024",
+    "imdbID": "tt23292906",
+    "Type": "movie",
+    "Poster": "https://www.rogerebert.com/wp-content/uploads/2024/07/MaXXXine.jpg",
+    "meta": {
+      "description": "Maxine continues her journey to stardom, following the events of X and Pearl.",
+      "ratings": [
+        { "Asher": { "rating": "1", "reaction": "A very dissapointing end to the trilogy." } }, 
+        { "Julia": { "rating": "1", "reaction": "Perdieron la esencia de una historia básica y sangrienta ... Resultó absurda y decepcionante." } } 
+      ]
+    }
+  },
+  {
+    "Title": "The Substance",
+    "Year": "2024",
+    "imdbID": "tt27633944",
+    "Type": "movie",
+    "Poster": "https://yc.cldmlk.com/ga5bmny1a1xsy4yx0ewaynne08/uploads/vertical_b41a1a0b-a8a4-4af6-948b-76bdd21e50c7.jpg",
+    "meta": {
+      "description": "A mysterious substance gives a young woman incredible powers, but comes with a dangerous price.",
+      "ratings": [
+        { "Asher": { "rating": "4.5", "reaction": "Gruesome, intense body-horror satire of celebrity, youth, and beauty." } }, 
+        { "Julia": { "rating": "5", "reaction": "Metáfora de una realidad bajo la que muchas personas son presas actualmente. Totalmente gráfica y sin censura. Demi, genial!" } } 
       ]
     }
   }
