@@ -10,8 +10,8 @@ interface MovieItemInfoProps {
 }
 
 const MovieItemInfo: React.FC<MovieItemInfoProps> = ({ movieItemInfoState, movieId, getImdbUrl }) => {
-  const getReviewerIcon = (reviewer: string) => {
-    console.log(reviewer);
+  const getReviewerIcon = (reviewer: string) => 
+    {
     switch (reviewer.toLowerCase()) {
       case 'asher':
         return <FaUserTie size={24} />;

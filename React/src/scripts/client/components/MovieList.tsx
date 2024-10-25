@@ -78,6 +78,7 @@ const MovieList: React.FC<MovieListProps> = ({ movies }) => {
   };
 
   const handleImageClick = (imdbID: string, description: string, e: React.MouseEvent) => {
+
     e.stopPropagation();
     if (movieItemInfoState.movieId === imdbID && movieItemInfoState.mode === Mode.Description) {
       showMovieInfo(null);
@@ -115,12 +116,12 @@ const MovieList: React.FC<MovieListProps> = ({ movies }) => {
           <div className="title">
             <span className="title-text">{`${index + 1}. ${movie.Title} (${movie.Year})`}</span>
           </div>
-          <div className="image-container">
+          <div className="image-container" onClick={(e) => handleImageClick(movie.imdbID, movie.meta.description, e)}  >
             <img
               src={movie.Poster}
               alt={movie.Title}
               className="movie-image"
-              onClick={(e) => handleImageClick(movie.imdbID, movie.meta.description, e)}
+              
             />
             <div className="info-icon">
               <FaInfoCircle />
