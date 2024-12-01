@@ -10,8 +10,8 @@ export const MovieData: Movie[] = [
     "meta": {
       "description": "A race to the White House in a torn America. Journalists risk their lives to report on a nation's descent into civil war and martial law.",
       "ratings": [
-        { "Asher": { "rating": "4.5", "reaction": "Intense and gripping. The action scenes had me on the edge of my seat." } },
-        { "Julia": { "rating": "4.5", "reaction": "Thriller total, deja mucho que pensar sobre la vivencia estresante de su protagonista, me gustó." } }
+        { "Asher": { "rating": "4.1", "reaction": "Intense and gripping. The action scenes had me on the edge of my seat." } },
+        { "Julia": { "rating": "4", "reaction": "Thriller total, deja mucho que pensar sobre la vivencia estresante de su protagonista, me gustó." } }
       ]
     }
   },
@@ -25,7 +25,7 @@ export const MovieData: Movie[] = [
       "description": "Experience the day the world went quiet. A prequel to the post-apocalyptic horror films 'A Quiet Place' and 'A Quiet Place Part II'.",
       "ratings": [
         { "Asher": { "rating": "4", "reaction": "The tension builds slowly but surely. Solid prequel." } },
-        { "Julia": { "rating": "4.5", "reaction": "Muy buena de inicio a fin, mención honrosa para el gatito que sólo dijo un \"miau\" cuando se supo a salvo." } }
+        { "Julia": { "rating": "4", "reaction": "Muy buena de inicio a fin, mención honrosa para el gatito que sólo dijo un \"miau\" cuando se supo a salvo." } }
       ]
     }
   },
@@ -178,7 +178,7 @@ export const MovieData: Movie[] = [
     "meta": {
       "description": "A wisecracking mercenary gets experimented on and becomes immortal but ugly, and sets out to track down the man who ruined his looks.",
       "ratings": [
-        { "Asher": { "rating": "4.5", "reaction": "Hilarious and action-packed. Reynolds was born to play Deadpool." } },
+        { "Asher": { "rating": "4.0", "reaction": "Hilarious and action-packed. Reynolds was born to play Deadpool." } },
         { "Julia": { "rating": "4", "reaction": "Diversión, romance, antihéroe con humor negro, combinación perfecta!" } }
       ]
     }
@@ -207,7 +207,7 @@ export const MovieData: Movie[] = [
       "description": "Wolverine is recovering from his injuries when Deadpool arrives, seeking his help. The two must work together to face a common enemy.",
       "ratings": [
         { "Asher": { "rating": "4", "reaction": "The team-up we've all been waiting for! The banter between Deadpool and Wolverine is pure gold." } },
-        { "Julia": { "rating": "5", "reaction": "Me encantó! sólo de escuchar los nombres de estos dos antihéroes es éxito garantizado. Mención honrosa a la música ... y por supuesto a la adorable, majestuosa, hermosa, empoderada y apretujable ... Dogpool!" } }
+        { "Julia": { "rating": "4.6", "reaction": "Me encantó! sólo de escuchar los nombres de estos dos antihéroes es éxito garantizado. Mención honrosa a la música ... y por supuesto a la adorable, majestuosa, hermosa, empoderada y apretujable ... Dogpool!" } }
       ]
     }
   },
@@ -221,7 +221,7 @@ export const MovieData: Movie[] = [
       "description": "A woman staying at an Airbnb discovers that the house she has rented is not what it seems.",
       "ratings": [
         { "Asher": { "rating": "5", "reaction": "Mind-blowing horror. A modern horror classic." } },
-        { "Julia": { "rating": "4.5", "reaction": "De esas pelis inesperadas, con un giro en la trama de terror. MUY BUENA!" } }
+        { "Julia": { "rating": "4.1", "reaction": "De esas pelis inesperadas, con un giro en la trama de terror. MUY BUENA!" } }
       ]
     }
   }, 
@@ -234,7 +234,7 @@ export const MovieData: Movie[] = [
     "meta": {
       "description": "During the summer of 1979, a group of friends witness a train crash and investigate subsequent unexplained events in their small town.",
       "ratings": [
-        { "Asher": { "rating": "4.5", "reaction": "Spielberg-esque nostalgia at its finest. A love letter to 80's cinema." } },
+        { "Asher": { "rating": "4.0", "reaction": "Spielberg-esque nostalgia at its finest. A love letter to 80's cinema." } },
         { "Julia": { "rating": "4", "reaction": "Entretenida, creativa, extraterrestres, me gustó." } }
       ]
     }
@@ -278,7 +278,7 @@ export const MovieData: Movie[] = [
     "meta": {
       "description": "A young couple trying for a baby moves into an aging, ornate apartment building on Central Park West, where they find themselves surrounded by peculiar neighbors.",
       "ratings": [
-        { "Asher": { "rating": "4.5", "reaction": "A timeless classic." } },
+        { "Asher": { "rating": "4.0", "reaction": "A timeless classic." } },
         { "Julia": { "rating": "4", "reaction": "Clásico referencial de terror, envolvente e intrigante." } }
       ]
     }
@@ -309,7 +309,7 @@ export const MovieData: Movie[] = [
       "description": "When a girl's body is found on a beach in Poland's Tricity, a prosecutor teams up with the victim's mother on an impassioned quest for the truth.",
       "ratings": [
         { "Asher": { "rating": "2.5", "reaction": "Makes me want to go clubbing in Poland." } },
-        { "Julia": { "rating": "4.5", "reaction": "Thiller policial, es un círculo de mentiras ... las cosas no son como parecen." } }
+        { "Julia": { "rating": "4.0", "reaction": "Thiller policial, es un círculo de mentiras ... las cosas no son como parecen." } }
       ]
     }
   }
@@ -366,8 +366,8 @@ export const MovieData: Movie[] = [
     "meta": {
       "description": "The story of a game show contestant who matches with a charming bachelor, unaware that he is a notorious serial killer.",
       "ratings": [
-        { "Asher": { "rating": "4.5", "reaction": "Spectacular drama with tension." } }, 
-        { "Julia": { "rating": "4.5", "reaction": "Historia desgarradora y cruda, una historia bien contada de hechos reales." } } 
+        { "Asher": { "rating": "4.0", "reaction": "Spectacular drama with tension." } }, 
+        { "Julia": { "rating": "4.0", "reaction": "Historia desgarradora y cruda, una historia bien contada de hechos reales." } } 
       ]
     }
   },
@@ -396,6 +396,54 @@ export const MovieData: Movie[] = [
       "ratings": [
         { "Asher": { "rating": "4.5", "reaction": "Gruesome, intense body-horror satire of celebrity, youth, and beauty." } }, 
         { "Julia": { "rating": "5", "reaction": "Metáfora de una realidad bajo la que muchas personas son presas actualmente. Totalmente gráfica y sin censura. Demi, genial!" } } 
+      ]
+    }
+  },
+  {
+    "Title": "The Fall Guy",
+    "Year": "2024",
+    "imdbID": "tt1684562",
+    "Type": "movie",
+    "Poster": "https://image.tmdb.org/t/p/original/e7olqFmzcIX5c23kX4zSmLPJi8c.jpg",
+    "meta": {
+      "description": "A stuntman, fresh off an almost career-ending accident, has to track down a missing movie star, solve a conspiracy, and try to win back the love of his life while still doing his day job.",
+      "ratings": [
+        {
+          "Asher": {
+            "rating": "1.0",
+            "reaction": "Charming performances in a laughably bad script and unbelievable premise."
+          }
+        },
+        {
+          "Julia": {
+            "rating": "2.0",
+            "reaction": "Acción y comedia ... Sin gran argumento. Para ver sin esperar nada extraordinario ... Buenos soundtrack."
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Title": "Heretic",
+    "Year": "2024",
+    "imdbID": "tt28015403",
+    "Type": "movie",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMzFiMWM4YjAtY2Y3Yi00MDIzLTk0N2MtYTAwNGM3ZmMwODhlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "meta": {
+      "description": "Two young missionaries are forced to prove their faith when they knock on the wrong door and are greeted by a diabolical Mr. Reed, becoming ensnared in his deadly game of cat-and-mouse.",
+      "ratings": [
+        {
+          "Asher": {
+            "rating": "4.5",
+            "reaction": "Gripping psychological horror. Standout performance by Hugh Grant. Satirical take and analysis on organized religion."
+          }
+        },
+        {
+          "Julia": {
+            "rating": "4.5",
+            "reaction": "Buen argumento, simple, pero suficiente para mantenerte espectante, terror psicológico que te atrapa."
+          }
+        }
       ]
     }
   }
