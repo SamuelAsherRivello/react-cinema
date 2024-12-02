@@ -446,5 +446,29 @@ export const MovieData: Movie[] = [
         }
       ]
     }
-  }
+  },
+  {
+    "Title": "M3GAN",
+    "Year": "2023",
+    "imdbID": "tt8760708",
+    "Type": "movie",
+    "Poster": "https://www.iceposter.com/thumbs/MOV_1899999_b.jpg",
+    "meta": {
+      "description": "A robotics engineer at a toy company builds a life-like doll that begins to take on a life of its own, with dangerous consequences.",
+      "ratings": [
+        {
+          "Asher": {
+            "rating": "1.0",
+            "reaction": "Fun to watch while making fun of it. A so-bad-it's-good movie."
+          }
+        },
+        {
+          "Julia": {
+            "rating": "2.0",
+            "reaction": "Argumento interesante pero no lo aprovecharon al máximo"
+          }
+        }
+      ]
+    }
+}
 ];
