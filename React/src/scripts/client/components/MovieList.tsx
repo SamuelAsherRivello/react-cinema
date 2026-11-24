@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FaStar, FaRegStar, FaStarHalfAlt, FaInfoCircle } from 'react-icons/fa';
-import { Movie } from '../data/DataTypes';
+import { Movie, Rating } from '../data/DataTypes';
 import MovieItemInfo from './MovieItemInfo';
 
 const MAX_STARS = 5;
@@ -75,7 +75,7 @@ const MovieList: React.FC<MovieListProps> = ({ movies }) => {
   }, [movies]);
 
   const showMovieInfo = (movieId: string | null, mode: Mode | null = null, content: string | null = null, reviewer: string | null = null) => {
-    let visible = content !== null;
+    const visible = content !== null;
     setMovieItemInfoState({ movieId, mode, content, visible, reviewer });
   };
 
@@ -89,8 +89,8 @@ const MovieList: React.FC<MovieListProps> = ({ movies }) => {
     }
   };
 
-  const handleReviewerMouseEnter = (imdbID: string, reviewer: string, rating: any) => {
-    let content = `"${rating.reaction}"`;
+  const handleReviewerMouseEnter = (imdbID: string, reviewer: string, rating: Rating[string]) => {
+    const content = `"${rating.reaction}"`;
     showMovieInfo(imdbID, Mode.Reaction, content, reviewer);
   };
 
