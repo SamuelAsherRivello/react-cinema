@@ -6,7 +6,7 @@ export const MovieData: Movie[] = [
     "Year": "2024",
     "imdbID": "tt17279496",
     "Type": "movie",
-    "Poster": "https://m.media-amazon.com/images/M/MV5BYTYyODhlODktYjUzNC00NjUyLWI1MzYtNmI0MTY3YTUxYjY2XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+    "Poster": "https://upload.wikimedia.org/wikipedia/en/0/0d/Civil_War_2024_film_poster.jpeg",
     "meta": {
       "description": "A race to the White House in a torn America. Journalists risk their lives to report on a nation's descent into civil war and martial law.",
       "ratings": [
@@ -20,7 +20,7 @@ export const MovieData: Movie[] = [
     "Year": "2024",
     "imdbID": "tt13433802",
     "Type": "movie",
-    "Poster": "https://m.media-amazon.com/images/M/MV5BNGZmODU3ZDEtMjQwZC00NTA5LThmNWYtYzk5MmY5ZmM4NGIxXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg",
+    "Poster": "https://upload.wikimedia.org/wikipedia/en/e/e7/A_Quiet_Place_Day_One_%282024%29_poster.jpg",
     "meta": {
       "description": "Experience the day the world went quiet. A prequel to the post-apocalyptic horror films 'A Quiet Place' and 'A Quiet Place Part II'.",
       "ratings": [
@@ -62,7 +62,7 @@ export const MovieData: Movie[] = [
     "Year": "2024",
     "imdbID": "tt27489557",
     "Type": "movie",
-    "Poster": "https://m.media-amazon.com/images/M/MV5BY2JlYjlkNzMtNTU3OS00NDVmLTk4NTYtYTM4ZTEwMGM4NDBiXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_SX300.jpg",
+    "Poster": "https://upload.wikimedia.org/wikipedia/en/b/bc/Abigail_Official_Poster.jpg",
     "meta": {
       "description": "A group of criminals kidnap the 12-year-old ballerina daughter of a powerful underworld figure. They soon discover that their young hostage is not who she appears to be.",
       "ratings": [
@@ -160,7 +160,7 @@ export const MovieData: Movie[] = [
     "Year": "2022",
     "imdbID": "tt19770238",
     "Type": "movie",
-    "Poster": "https://m.media-amazon.com/images/M/MV5BMTM3OTU0ZGUtNzYwYy00ODU3LWI3YjgtOWZlODliMmRiMWEzXkEyXkFqcGdeQXVyMTAyMjQ3NzQ1._V1_SX300.jpg",
+    "Poster": "https://upload.wikimedia.org/wikipedia/en/1/11/Aftersun.jpg",
     "meta": {
       "description": "Sophie reflects on the shared joy and private melancholy of a holiday she took with her father twenty years earlier. Memories real and imagined fill the gaps between miniDV footage as she tries to reconcile the father she knew with the man she didn't.",
       "ratings": [
@@ -188,7 +188,7 @@ export const MovieData: Movie[] = [
     "Year": "2018",
     "imdbID": "tt5463162",
     "Type": "movie",
-    "Poster": "https://m.media-amazon.com/images/M/MV5BMTQ0NTk2MTYtMWZlYS00ZTliLThmZTEtNDVkODgxNmQ2ZGM2XkEyXkFqcGdeQXVyNTc4MjczMTM@._V1_SX300.jpg",
+    "Poster": "https://upload.wikimedia.org/wikipedia/en/c/cf/Deadpool_2_poster.jpg",
     "meta": {
       "description": "Foul-mouthed mutant mercenary Wade Wilson (a.k.a. Deadpool) assembles a team of fellow mutant rogues to protect a young boy with supernatural abilities from the brutal, time-traveling cyborg Cable.",
       "ratings": [     
@@ -390,7 +390,7 @@ export const MovieData: Movie[] = [
     "Year": "2024",
     "imdbID": "tt27633944",
     "Type": "movie",
-    "Poster": "https://yc.cldmlk.com/ga5bmny1a1xsy4yx0ewaynne08/uploads/vertical_b41a1a0b-a8a4-4af6-948b-76bdd21e50c7.jpg",
+    "Poster": "https://upload.wikimedia.org/wikipedia/en/f/ff/The_Substance_poster.jpg",
     "meta": {
       "description": "A mysterious substance gives a young woman incredible powers, but comes with a dangerous price.",
       "ratings": [
@@ -452,7 +452,7 @@ export const MovieData: Movie[] = [
     "Year": "2023",
     "imdbID": "tt8760708",
     "Type": "movie",
-    "Poster": "https://www.iceposter.com/thumbs/MOV_1899999_b.jpg",
+    "Poster": "https://upload.wikimedia.org/wikipedia/en/0/03/M3GAN_Poster.jpeg",
     "meta": {
       "description": "A robotics engineer at a toy company builds a life-like doll that begins to take on a life of its own, with dangerous consequences.",
       "ratings": [
@@ -472,3 +472,4 @@ export const MovieData: Movie[] = [
     }
 }
 ];
+
