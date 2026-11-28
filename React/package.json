@@ -2,7 +2,7 @@
   "homepage": "https://github.com/SamuelAsherRivello/react-cinema/",
   "name": "react-ts",
   "private": true,
-  "version": "0.9.0",
+  "version": "0.9.1",
   "type": "module",
   "scripts": {
     "CLIENT  ----------------------------------------------------": "",
@@ -37,3 +37,4 @@
     "node": "^20.19.0 || ^22.13.0 || >=24"
   }
 }
+

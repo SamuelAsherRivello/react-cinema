@@ -1,0 +1,64 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_sha:
+        description: Exact main commit to release
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.source_sha }}
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Validate release source and version
+        env:
+          SOURCE_SHA: ${{ inputs.source_sha }}
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$SOURCE_SHA" =~ ^[0-9a-f]{40}$ ]]
+          test "$(git rev-parse HEAD)" = "$SOURCE_SHA"
+          test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$SOURCE_SHA"
+          version="$(sed -n 's/^version=//p' version.txt)"
+          [[ "$version" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]
+          VERSION="$version" node -e 'const p=require("./React/package.json"), l=require("./React/package-lock.json"); if ([p.version,l.version,l.packages[""].version].some(v => v !== process.env.VERSION)) process.exit(1)'
+          test -z "$(git ls-remote --tags origin "refs/tags/v$version" "refs/tags/v$version^{}")"
+          if gh release view "v$version" >/dev/null 2>&1; then exit 1; fi
+      - name: Install, lint, and build
+        working-directory: React
+        run: |
+          npm ci
+          npm run lint
+          npm run client-build
+      - name: Tag and publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_SHA: ${{ inputs.source_sha }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          version="$(sed -n 's/^version=//p' version.txt)"
+          test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$SOURCE_SHA"
+          test -z "$(git ls-remote --tags origin "refs/tags/v$version" "refs/tags/v$version^{}")"
+          if gh release view "v$version" >/dev/null 2>&1; then exit 1; fi
+          git tag "v$version" "$SOURCE_SHA"
+          git push origin "refs/tags/v$version"
+          gh release create "v$version" --verify-tag --title "v$version" --notes "Restores seven movie posters with replacement image links."
+
